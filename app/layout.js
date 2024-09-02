@@ -3,6 +3,8 @@ import "./globals.css";
 import * as React from "react";
 import {NextUIProvider} from "@nextui-org/react";
 const inter = Inter({ subsets: ["latin"] });
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export const metadata = {
   title: "GM LEATHER",
