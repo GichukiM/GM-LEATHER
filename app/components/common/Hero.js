@@ -30,7 +30,7 @@ function Hero() {
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
           <a
             href="#"
-            className="flex items-center justify-center w-full px-6 py-3 bg-amber-900 text-white py-2 px-4 border-white hover:bg-amber-950"
+            className="flex items-center justify-center w-full bg-amber-900 text-white py-2 px-4 border-white hover:bg-amber-950"
           >
             <div className="text-sm font-semibold">Shop Now</div>
           </a>
