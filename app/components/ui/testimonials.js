@@ -33,7 +33,11 @@ export default function Example() {
   const { quote, name, title, image } = testimonials[currentTestimonial];
 
   return (
-    <section className="relative isolate overflow-hidden bg-white px-8 py-8 sm:py-32 lg:px-8">
+    <>
+    <h1 className='flex text-center m-4 justify-center text-amber-950 flex-grow font-bold text-[46px] leading-[54px]'>
+     Testimonials from our clients and customers
+    </h1>
+    <section className="relative isolate overflow-hidden bg-white py-8">
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <figure className="mt-8">
           <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
@@ -47,5 +51,6 @@ export default function Example() {
         </figure>
       </div>
     </section>
+    </>
   );
 }

@@ -48,7 +48,7 @@ export default function NewProducts() {
         Featured New Products
       </h1>
       <p className='flex text-center m-4 justify-center flex-grow text-[#465b52] text-[16px] my-[15px]'>
-        Winter collections New Modern Design
+       Step Up Your Style with Our Latest Designs
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 md:p-8">
           {products.map((product) => (

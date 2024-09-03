@@ -25,12 +25,12 @@ function Hero() {
           On all products
         </p>
         <p className="mb-6 text-lg text-white dark:text-gray-400">
-          Save more with coupons & up to 70% off!
+          Save more with coupons & up to 25% off!
         </p>
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
           <a
             href="#"
-            className="flex items-center justify-center w-full px-6 py-3 text-white bg-gradient-to-r from-teal-500 to-teal-600 rounded-lg shadow-lg hover:from-teal-600 hover:to-teal-700 transition duration-300 ease-in-out transform hover:scale-105 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-700"
+            className="flex items-center justify-center w-full px-6 py-3 bg-amber-900 text-white py-2 px-4 border-white hover:bg-amber-950"
           >
             <div className="text-sm font-semibold">Shop Now</div>
           </a>

@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaPinterest } from 'reac
 
 const Footer = () => {
   return (
-    <footer className="text-black p-8">
+    <footer className="text-white bg-black p-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         {/* Logo and Contact */}
         <div>
@@ -69,14 +69,20 @@ const Footer = () => {
             <p className="text-sm mb-4">Get E-mail updates about our latest shop and special offers</p>
             <form className="flex flex-col">
                 <input
+                type="name"
+                placeholder="Your name"
+                className="mb-4 px-4 py-2 border border-black"
+                required
+                />
+                <input
                 type="email"
                 placeholder="Your email address"
-                className="mb-4 px-4 py-2 border border-gray-300 rounded-md"
+                className="mb-4 px-4 py-2 border border-black"
                 required
                 />
                 <button
                 type="submit"
-                className="bg-teal-600 text-white py-2 px-4 rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="bg-amber-900 text-white py-2 px-4 border-white hover:bg-amber-950 "
                 >
                 SUBSCRIBE
                 </button>

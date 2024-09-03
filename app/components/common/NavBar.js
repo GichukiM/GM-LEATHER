@@ -80,12 +80,13 @@ function NavBar() {
         </button>
 
         <div className="flex items-center space-x-4">
+
           <div className="relative group hidden md:block">
             <button
               aria-expanded={isFootwearOpen}
               aria-controls="footwear-dropdown"
               onClick={toggleFootwear}
-              className="text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2"
+              className="text-gray-600 hover:text-black p-4"
             >
               FOOTWEAR
             </button>
@@ -96,11 +97,11 @@ function NavBar() {
                   <div className="mx-auto max-w-7xl px-8 py-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
                       <div className="text-sm">
-                        <p id="Footwear-heading" className="font-medium text-gray-900">Footwear</p>
+                        <p id="Footwear-heading" className="font-medium text-gray-900">All Footwear</p>
                         <ul role="menu" aria-labelledby="Footwear-heading" className="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
                           {footwearItems.map((item, index) => (
                             <li key={index} className="flex">
-                              <a href="#" role="menuitem" className="hover:text-gray-800">{item}</a>
+                              <a href="#" role="menuitem" className="text-gray-600 hover:text-black">{item}</a>
                             </li>
                           ))}
                         </ul>
@@ -108,7 +109,7 @@ function NavBar() {
                       <div className="grid grid-cols-2 gap-x-8 gap-y-10">
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg" alt="Footwear" className="object-cover object-center" />
+                            <img src="/public/Hero-2.jpg" alt="Footwear" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -118,7 +119,7 @@ function NavBar() {
                         </div>
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg" alt="Footwear" className="object-cover object-center" />
+                            <img src="/public//Hero-2.jpg" alt="Footwear" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -133,12 +134,13 @@ function NavBar() {
               </div>
             )}
           </div>
+
           <div className="relative group hidden md:block">
             <button
               aria-expanded={isAccessoriesOpen}
               aria-controls="accessories-dropdown"
               onClick={toggleAccessories}
-              className="text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2"
+              className="text-gray-600 hover:text-black p-4"
             >
               ACCESSORIES
             </button>
@@ -161,7 +163,7 @@ function NavBar() {
                       <div className="grid grid-cols-2 gap-x-8 gap-y-10">
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg" alt="Accessory" className="object-cover object-center" />
+                            <img src="/public/Hero-2.jpg" alt="Accessory" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -171,11 +173,11 @@ function NavBar() {
                         </div>
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg" alt="Accessory" className="object-cover object-center" />
+                            <img src="/public/Hero-2.jpg" alt="Accessory" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
-                            Basic Tees
+                            Belts
                           </a>
                           <p aria-hidden="true" className="mt-1">Shop now</p>
                         </div>
@@ -186,6 +188,7 @@ function NavBar() {
               </div>
             )}
           </div>
+
         </div>
 
         {/* Centered Brand */}
@@ -200,17 +203,24 @@ function NavBar() {
        <div className="flex items-center space-x-4">
           <button
             type="button"
-            className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+            className="text-gray-500 dark:text-gray-400 hover:text-black text-sm p-2.5"
             onClick={() => setIsSearchOpen(!isSearchOpen)}
           >
             <CiSearch className="w-6 h-6" />
             <span className="sr-only">Search</span>
           </button>
-          <CiUser className="hidden md:block w-6 h-6" />
+          <a
+            href='/logIn'
+            type="button"
+            className="text-gray-500 dark:text-gray-400 hover:text-black text-sm p-2.5"
+          >
+            <CiUser className="hidden md:block w-6 h-6" />
+            <span className="sr-only">signIn/SignUp</span>
+          </a>
           <a
             href='/cart'
             type="button"
-            className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+            className="text-gray-500 dark:text-gray-400 hover:text-black text-sm p-2.5"
           >
             <BsBag className="w-6 h-6" />
             <span className="sr-only">Cart</span>
@@ -409,17 +419,17 @@ function NavBar() {
         <div className="fixed inset-x-0 z-10 bg-white dark:bg-gray-800 p-4 shadow-lg">
           <input
             type="text"
-            className="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="block w-full p-2 text-sm text-black border border-black bg-gray-50"
             placeholder="Search..."
           />
         </div>
       )}
     
 
-      {/* Cart Sidebar */}
+      {/* Cart Sidebar
       {isCartOpen && (
         <Cart />
-      )}
+      )} */}
     </div>
 
   );
