@@ -119,7 +119,7 @@ function page() {
           <div className="w-full lg:w-1/2">
             <img
               alt="Leather Shoe Showcase"
-              src="/public/Hero-2.jpg"
+              src="/Hero-2.jpg"
               className="h-full w-full object-cover"
             />
           </div>

@@ -3,27 +3,27 @@ import React from 'react';
 const products = [
   {
     name: 'Oxford and Derbies',
-    image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg',
+    image: '/Hero-1.jpg',
   },
   {
     name: 'Monk Straps',
-    image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg',
+    image: '/Hero-2.jpg',
   },
   {
     name: 'Loafers and Slip-Ons',
-    image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg',
+    image: '/Hero-3.jpg',
   },
   {
     name: 'Boots',
-    image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg',
+    image: '/Hero-1.jpg',
   },
   {
     name: 'Mules and Sandles',
-    image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg',
+    image: '/Hero-2.jpg',
   },
   {
     name: 'Accessories',
-    image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg',
+    image: '/Hero-3.jpg',
   },
 ];
 

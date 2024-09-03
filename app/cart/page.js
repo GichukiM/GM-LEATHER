@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from '../components/common/NavBar';
-import cartTotal from '../components/ui/cartTotal';
 
 function page() {
   return (
@@ -31,10 +30,10 @@ function page() {
                 <tbody>
                     <tr class="bg-white border-t border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <td class="p-4">
-                            <img src="../../public/Hero-2.jpg" class="w-16 md:w-32 max-w-full max-h-full" alt="Apple Watch"/>
+                            <img src="/Hero-2.jpg" class="w-16 md:w-32 max-w-full max-h-full" alt="Apple Watch"/>
                         </td>
                         <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                            Apple Watch
+                            Shoes
                         </td>
                         <td class="px-6 py-4">
                             <div class="flex items-center">
@@ -56,7 +55,7 @@ function page() {
                             </div>
                         </td>
                         <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                            $599
+                            Ksh 14,500
                         </td>
                         <td class="px-6 py-4">
                             <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remove</a>
@@ -79,7 +78,7 @@ function page() {
                     />
                     <button
                     type="button"
-                    className="px-4 py-2 text-white font-semibold rounded-lg bg-green-200"
+                    className="px-4 py-2 flex justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black"
                     >
                     Apply
                     </button>
@@ -107,7 +106,7 @@ function page() {
                         Cart Subtotal
                     </th>
                     <td className="px-6 py-4">
-                        $2999
+                        Ksh 14,500
                     </td>
                     </tr>
                     <tr className="bg-white border dark:bg-gray-800 dark:border-gray-700">
@@ -115,7 +114,7 @@ function page() {
                         Shipping
                     </th>
                     <td className="px-6 py-4">
-                        $1999
+                        Ksh. 2,000
                     </td>
                     </tr>
                     <tr className="bg-white border dark:bg-gray-800 dark:border-gray-700">
@@ -123,7 +122,7 @@ function page() {
                         Coupon Discount
                     </th>
                     <td className="px-6 py-4">
-                        $1999
+                        Ksh. 350
                     </td>
                     </tr>
                     <tr className="bg-white border dark:bg-gray-800">
@@ -131,14 +130,14 @@ function page() {
                         Total
                     </th>
                     <td className="px-6 py-4">
-                        $99
+                        Ksh 17,850
                     </td>
                     </tr>
                 </tbody>
                 </table>
-                <button type="submit" className="p-2 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-green-300 mt-4 rounded-lg dark:text-white dark:bg-gray-800">
+                <a href="/checkout" className="flex py-4 p-5 mt-4 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">
                 Proceed to Checkout
-                </button>
+                </a>
             </div>
 
         </div>

@@ -5,7 +5,7 @@ const products = [
   {
     id: 1,
     name: 'Basic Tee',
-    href: '#',
+    href: '/product-details',
     imageSrc: '/Hero-1.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
@@ -14,7 +14,7 @@ const products = [
   {
     id: 2,
     name: 'Basic Tee',
-    href: '#',
+    href: '/product-details',
     imageSrc: '/Hero-2.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     name: 'Basic Tee',
-    href: '#',
+    href: '/product-details',
     imageSrc: '/Hero-3.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     name: 'Basic Tee',
-    href: '#',
+    href: '/product-details',
     imageSrc: '/Hero-3.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',

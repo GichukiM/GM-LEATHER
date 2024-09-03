@@ -1,59 +1,60 @@
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'The Ultimate Guide to Sneaker Care',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+      'Discover the best practices to keep your sneakers looking fresh. From cleaning techniques to storage tips, learn how to extend the life of your favorite pairs.',
+    date: 'Jan 5, 2024',
+    datetime: '2024-01-05',
+    category: { title: 'Footwear Tips', href: '#' },
     author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
+      name: 'Jessica Lee',
+      role: 'Footwear Specialist',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    image: '../../../public/Hero-1.jpg' // Post image URL
-  },
-  {
-    id: 2,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-    image: 'https://images.unsplash.com/photo-1581276879432-15a15fbe5b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fGJsb2d8ZW58MHx8fHwxNjE5NDQyMjU0&ixlib=rb-1.2.1&q=80&w=400' // Post image URL
+    image: '/Hero-1.jpg', // Post image URL
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'How to Style High-Tops with Any Outfit',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+      'High-top sneakers are versatile and trendy. Learn how to style them with various outfits, whether you’re going for a casual look or something more polished.',
+    date: 'Mar 10, 2024',
+    datetime: '2024-03-10',
+    category: { title: 'Fashion Advice', href: '#' },
     author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
+      name: 'Emily Carter',
+      role: 'Fashion Blogger',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    image: 'https://images.unsplash.com/photo-1581276879432-15a15fbe5b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fGJsb2d8ZW58MHx8fHwxNjE5NDQyMjU0&ixlib=rb-1.2.1&q=80&w=400' // Post image URL
+    image: '/Hero-2.jpg', // Post image URL
+  },
+  {
+    id: 4,
+    title: 'The Evolution of Basketball Shoes: From the Court to the Streets',
+    href: '#',
+    description:
+      'Explore the history and evolution of basketball shoes, from iconic models to their impact on streetwear culture. Learn how they’ve shaped fashion beyond the court.',
+    date: 'Apr 25, 2024',
+    datetime: '2024-04-25',
+    category: { title: 'Sneaker Culture', href: '#' },
+    author: {
+      name: 'David Brown',
+      role: 'Sneaker Historian',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    image: '/Hero-3.jpg', // Post image URL
   }
-]
+];
+
 
 export default function Example() {
   return (
@@ -64,8 +65,8 @@ export default function Example() {
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
-            <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-              <img src={post.image} alt={post.title} className="w-full h-48 object-cover rounded-lg" />
+            <article key={post.id} className="flex max-w-xl flex-col items-start border border-black p-4 justify-between">
+              <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
               <div className="mt-4 flex items-center gap-x-4 text-xs">
                 <time dateTime={post.datetime} className="text-gray-500">
                   {post.date}

@@ -44,11 +44,11 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">About</h4>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">About us</a></li>
-            <li><a href="#" className="hover:underline">Delivery Information</a></li>
-            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-            <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:underline">Contact Us</a></li>
+            <li><a href="/about" className="hover:underline">About us</a></li>
+            <li><a href="/privacy-policy" className="hover:underline">Privacy Policy</a></li>
+            <li><a href="/terms-and-conditions" className="hover:underline">Terms & Conditions</a></li>
+            <li><a href="/return-policy" className="hover:underline">Return Policy</a></li>
+            <li><a href="/contact" className="hover:underline">Contact Us</a></li>
           </ul>
         </div>
 
@@ -56,11 +56,9 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">My Account</h4>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">Sign In</a></li>
-            <li><a href="#" className="hover:underline">View Cart</a></li>
-            <li><a href="#" className="hover:underline">My WishList</a></li>
-            <li><a href="#" className="hover:underline">Track My Order</a></li>
-            <li><a href="#" className="hover:underline">Help</a></li>
+            <li><a href="/signUp" className="hover:underline">Sign In</a></li>
+            <li><a href="/dashboard" className="hover:underline">Dashboard</a></li>
+            <li><a href="/cart" className="hover:underline">View Cart</a></li>
           </ul>
         </div>
 

@@ -5,7 +5,6 @@ import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
-import Cart from "../../../app/cart/page";
 
 function NavBar() {
   const footwearItems = [
@@ -109,7 +108,7 @@ function NavBar() {
                       <div className="grid grid-cols-2 gap-x-8 gap-y-10">
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="/public/Hero-2.jpg" alt="Footwear" className="object-cover object-center" />
+                            <img src="/Hero-2.jpg" alt="Footwear" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -119,7 +118,7 @@ function NavBar() {
                         </div>
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="/public//Hero-2.jpg" alt="Footwear" className="object-cover object-center" />
+                            <img src="/Hero-2.jpg" alt="Footwear" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -163,7 +162,7 @@ function NavBar() {
                       <div className="grid grid-cols-2 gap-x-8 gap-y-10">
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="/public/Hero-2.jpg" alt="Accessory" className="object-cover object-center" />
+                            <img src="/Hero-2.jpg" alt="Accessory" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -173,7 +172,7 @@ function NavBar() {
                         </div>
                         <div className="group relative text-base sm:text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img src="/public/Hero-2.jpg" alt="Accessory" className="object-cover object-center" />
+                            <img src="/Hero-2.jpg" alt="Accessory" className="object-cover object-center" />
                           </div>
                           <a href="#" className="mt-6 block font-medium text-gray-900">
                             <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -288,7 +287,7 @@ function NavBar() {
                           {/* Replace with actual image URLs */}
                           <div className="group relative text-sm">
                             <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                              <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg" alt="Footwear Image 1" className="object-cover object-center w-full h-full" />
+                              <img src="/Hero-1.jpg" alt="Footwear Image 1" className="object-cover object-center w-full h-full" />
                             </div>
                             <a href="#" className="mt-6 block font-medium text-gray-900">
                               <span className="absolute inset-0 z-10" aria-hidden="true"></span>
@@ -301,7 +300,7 @@ function NavBar() {
                           {/* Replace with actual image URLs */}
                           <div className="group relative text-sm">
                             <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                              <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg" alt="Footwear Image 2" className="object-cover object-center w-full h-full" />
+                              <img src="/Hero-2.jpg" alt="Footwear Image 2" className="object-cover object-center w-full h-full" />
                             </div>
                             <a href="#" className="mt-6 block font-medium text-gray-900">
                               <span className="absolute inset-0 z-10" aria-hidden="true"></span>
