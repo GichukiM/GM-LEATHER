@@ -91,7 +91,7 @@ const ReturnPolicy = () => {
         Proceed through the portal and choose a carrier to fulfill your return. Ensure your items are securely wrapped, and your parcel contains all the requested information. Remember to ask for a receipt as proof of sending.
       </p>
 
-      <h3 className="text-xl font-medium mb-2">3. We'll Do The Rest</h3>
+      <h3 className="text-xl font-medium mb-2">3. We will Do The Rest</h3>
       <p className="mb-4">
         Once we have processed your return, you will receive notification via email or SMS. All successful returns will be credited to the original method used for payment. Please note refunds can take 3 to 5 working days (Monday to Friday, excluding public holidays) to reflect in your account.
       </p>

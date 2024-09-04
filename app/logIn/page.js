@@ -64,7 +64,7 @@ function page() {
               </form>
 
               <p className="mt-6 text-center text-sm text-gray-500">
-                Don't have an account?{' '}
+                Do n0t have an account?{' '}
                 <a href="/signUp" className="font-semibold text-amber-700 hover:text-amber-800">
                   Sign up here!
                 </a>
