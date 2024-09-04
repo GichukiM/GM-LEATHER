@@ -19,15 +19,15 @@ const CheckoutForm = () => {
   };
 
   return (
-    <div className="flex p-24">
+    <div className="max-w-screen-lg mx-auto p-4 md:p-8 lg:p-16 flex flex-col md:flex-row">
       {/* Left Side: Order Summary */}
-      <div className="w-1/2 p-8 border-r">
+      <div className="w-full md:w-1/2 p-4 md:p-8 border-b md:border-r">
         <h1 className="text-2xl font-bold mb-4">Company Name</h1>
         <div className="mb-4">
           <h2 className="text-xl font-semibold">Total:</h2>
           <p className="text-2xl">$144.97</p>
         </div>
-        <div className='p-8'>
+        <div className='p-4 md:p-8'>
           <p>Item 1 <span className="float-right">$49.99</span></p>
           <p>Item 2 <span className="float-right">$29.99</span></p>
           <p>Item 3 <span className="float-right">$34.99</span></p>
@@ -36,18 +36,18 @@ const CheckoutForm = () => {
       </div>
 
       {/* Right Side: Checkout Progress */}
-      <div className="w-1/2 p-16">
+      <div className="w-full md:w-1/2 p-4 md:p-8">
         {/* Progress Bar */}
         <div className="mb-6">
-          <ul className="flex items-center justify-evenly">
-            <li className={`flex items-center ${step > 1 ? 'text-green-500' : ''}`}>
+          <ul className="flex items-center justify-evenly md:justify-start flex-wrap">
+            <li className={`flex items-center ${step > 1 ? 'text-green-500' : ''} mb-2 md:mb-0`}>
               <span className={`w-8 h-8 flex items-center justify-center rounded-full border ${step > 1 ? 'bg-green-500 text-white' : 'bg-gray-200'}`}>
                 {step > 1 ? <FaCheck /> : '1'}
               </span>
               <span className={`w-1 h-1 bg-gray-200 mx-2 ${step > 1 ? 'bg-green-500' : ''}`}></span>
               <span className={`text-xs ${step > 1 ? 'font-bold text-green-500' : 'text-gray-500'}`}>Step 1</span>
             </li>
-            <li className={`flex items-center ${step > 2 ? 'text-green-500' : ''}`}>
+            <li className={`flex items-center ${step > 2 ? 'text-green-500' : ''} mb-2 md:mb-0`}>
               <span className={`w-8 h-8 flex items-center justify-center rounded-full border ${step > 2 ? 'bg-green-500 text-white' : 'bg-gray-200'}`}>
                 {step > 2 ? <FaCheck /> : '2'}
               </span>
@@ -69,7 +69,7 @@ const CheckoutForm = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Shipping Address</h2>
             <form>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="mb-4">
                   <label htmlFor="first-name" className="block">First Name *</label>
                   <input type="text" id="first-name" className="border w-full p-2" />
@@ -107,14 +107,13 @@ const CheckoutForm = () => {
                 <input type="checkbox" id="use-for-payment" className="mr-2" />
                 <label htmlFor="use-for-payment">Use this address for payment details</label>
               </div>
-              <div className="flex justify-between space-x-2">
-                <a href='/cart' type="button" className="flex py-4 p-5 mt-4 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">Go Back to Cart</a>
-                <button type="button" onClick={handleNextStep} className="flex py-4 p-5 mt-4 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">Next</button>
+              <div className="flex flex-col md:flex-row justify-between space-y-2 md:space-y-0 md:space-x-2">
+                <a href='/cart' type="button" className="flex py-4 p-5 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">Go Back to Cart</a>
+                <button type="button" onClick={handleNextStep} className="flex py-4 p-5 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">Next</button>
               </div>
             </form>
           </div>
         )}
-
 
         {/* Step 2: Payment Details */}
         {step === 2 && (
@@ -132,20 +131,16 @@ const CheckoutForm = () => {
                     <input type="text" id="card-number" className="border w-full p-2" />
                   </div>
                   <div className="mb-4">
+                    <label htmlFor="expiry-date" className="block">Expiry date *</label>
+                    <input type="text" id="expiry-date" className="border w-full p-2" />
+                  </div>
+                  <div className="mb-4">
                     <label htmlFor="cvv" className="block">CVV *</label>
                     <input type="text" id="cvv" className="border w-full p-2" />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="card-name" className="block">Name on card *</label>
-                    <input type="text" id="card-name" className="border w-full p-2" />
-                  </div>
-                  <div className="mb-4">
-                    <label htmlFor="expiration-date" className="block">Expiration date *</label>
-                    <input type="text" id="expiration-date" className="border w-full p-2" />
-                  </div>
-                  <div className="mb-4">
-                    <input type="checkbox" id="remember-card" className="mr-2" />
-                    <label htmlFor="remember-card">Remember credit card details for next time</label>
+                    <input type="checkbox" id="remember-mpesa" className="mr-2" />
+                    <label htmlFor="remember-mpesa">Remember Mpesa details for next time</label>
                   </div>
                 </form>
               </div>
@@ -175,7 +170,7 @@ const CheckoutForm = () => {
           </div>
         )}
 
-        {/* Step 3: Review Your Order */}
+        {/* Step 3: Confirm & Place Order */}
         {step === 3 && (
           <div>
             <h2 className="text-xl font-semibold mb-4">Review Your Order</h2>
@@ -207,7 +202,7 @@ const CheckoutForm = () => {
             </div>
             <div className="flex justify-between">
               <button type="button" onClick={handlePreviousStep} className="flex py-4 p-5 mt-4 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">Previous</button>
-              <button type="button" className="flex py-4 p-5 mt-4 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">Place Your Order</button>
+              <button type="button" className="flex py-4 p-5 mt-4 justify-center text-sm font-semibold text-white bg-black border border-black hover:bg-white hover:text-black">Place Order</button>
             </div>
           </div>
         )}

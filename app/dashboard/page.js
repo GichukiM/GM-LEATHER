@@ -35,16 +35,9 @@ const Dashboard = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         <div className="relative container mx-auto px-4">
-          <div className="flex flex-col-reverse lg:flex-row">
-            <div className='w-full lg:w-1/2 flex flex-col justify-center px-6 py-12'>
-              <h1 className="text-3xl font-bold mb-4 text-white">USER DASHBOARD</h1>
-              <p className="mb-8 text-white">
-                Welcome to your dashboard! Here you can update your personal information to ensure your account is up to date. 
-                Keep your details current for a seamless experience with our services.
-              </p>
-            </div>
+          <div className="flex flex-col-reverse items-center justify-center">
 
-            <div className='w-full lg:w-1/2'>
+          <div className='w-full lg:w-1/2'>
               <h2 className="text-2xl font-semibold mb-4 text-white">Update Your Information:</h2>
 
               <form onSubmit={handleSubmit} className="gap-4">
@@ -106,6 +99,15 @@ const Dashboard = () => {
                 </div>
               </form>
             </div>
+
+            <div className='w-full lg:w-1/2 flex flex-col justify-center px-6 py-12'>
+              <h1 className="text-3xl font-bold mb-4 text-white">USER DASHBOARD</h1>
+              <p className="mb-8 text-white">
+                Welcome to your dashboard! Here you can update your personal information to ensure your account is up to date. 
+                Keep your details current for a seamless experience with our services.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>

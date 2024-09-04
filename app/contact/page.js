@@ -32,7 +32,7 @@ const ContactUs = () => {
       <section className="relative text-white flex min-h-screen items-center justify-center bg-gray-100" style={{ backgroundImage: `url(/Hero-1.jpg)`, backgroundRepeat: `no-repeat`, backgroundSize: `cover` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative container mx-auto px-4">
-          <div className="flex flex-col-reverse lg:flex-row">
+          <div className="flex flex-col items-center justify-center">
             <div className='w-full lg:w-1/2 flex flex-col justify-center px-6 py-12'>
               <h1 className="text-3xl font-bold mb-4">CONTACT US</h1>
               <p className="mb-8">
