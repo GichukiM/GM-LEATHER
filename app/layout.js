@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export const metadata = {
-  title: "GM LEATHER",
+  title: "MIRICO RI COLI",
   description: "Sourced from our own beef cattle",
 };
 

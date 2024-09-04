@@ -5,20 +5,32 @@ import React, { useState, useEffect } from 'react';
 export default function Example() {
   const testimonials = [
     {
-      quote: "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”",
-      name: "Judith Black",
-      title: "CEO of Workcation",
+      quote: "“These shoes are a game-changer! They're incredibly comfortable and stylish. I've received so many compliments since I started wearing them. Highly recommend to anyone looking for quality footwear!”",
+      name: "Emily Carter",
+      title: "Fashion Blogger",
     },
     {
-      quote: "“Dolore molestiae rem nesciunt distinctio esse provident natus obcaecati. Aut, id omnis cumque unde aliquid doloremque optio veniam magni!”",
-      name: "Michael Scott",
-      title: "Regional Manager at Dunder Mifflin",},
+      quote: "“As someone who's always on the go, I need shoes that can keep up with me. These are perfect! They offer great support and look fantastic with both casual and professional outfits.”",
+      name: "James Lee",
+      title: "Marketing Executive",
+    },
     {
-      quote: "“Aliquid doloremque, commodi quo corporis adipisci, perferendis eos pariatur, consectetur facilis debitis nobis dolore odit dolorum velit laudantium fugiat.”",
-      name: "Pam Beesly",
-      title: "Receptionist at Dunder Mifflin",
+      quote: "“I absolutely love these shoes! The fit is perfect, and they're so comfortable that I can wear them all day without any discomfort. Plus, they look great with everything in my wardrobe.”",
+      name: "Sophia Martinez",
+      title: "Graphic Designer",
+    },
+    {
+      quote: "“I was skeptical at first, but these shoes have exceeded my expectations. The craftsmanship is top-notch, and they feel incredibly durable. I’ve already recommended them to my friends!”",
+      name: "Liam Thompson",
+      title: "Software Developer",
+    },
+    {
+      quote: "“These shoes are the perfect blend of comfort and style. Whether I'm at work or out with friends, they always make me feel confident and stylish. I’m definitely buying another pair!”",
+      name: "Ava Johnson",
+      title: "Content Creator",
     },
   ];
+  
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
