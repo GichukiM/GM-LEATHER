@@ -69,7 +69,7 @@ export default function ProductDetails() {
             </div>
             <p className="text-xl font-semibold text-gray-800 mb-4">Ksh. 14500</p>
             <p className="text-gray-600 mb-4">
-              Description of the product goes here. This includes details about the product's features, materials, and any other relevant information.
+              Description of the product goes here. This includes details about the products features, materials, and any other relevant information.
             </p>
 
             <div className="mb-4">

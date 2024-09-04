@@ -36,11 +36,11 @@ const ContactUs = () => {
             <div className='w-full lg:w-1/2 flex flex-col justify-center px-6 py-12'>
               <h1 className="text-3xl font-bold mb-4">CONTACT US</h1>
               <p className="mb-8">
-                Welcome to MIRICO RI COLI, located in Nairobi, Kenya! We're dedicated to providing exceptional service and support to our valued customers. Whether you have questions about our products, need assistance with an order, or simply want to share your feedback, we're here to help. Feel free to reach out to us using any of the methods below:
+                Welcome to MIRICO RI COLI, located in Nairobi, Kenya! We are dedicated to providing exceptional service and support to our valued customers. Whether you have questions about our products, need assistance with an order, or simply want to share your feedback, we are here to help. Feel free to reach out to us using any of the methods below:
               </p>
               <div className="mb-8">
                 <h2 className="text-2xl font-semibold mb-2">Email</h2>
-                <p className="mb-4">Reach MIRICO RI COLI’s inbox at <a href="mailto:hey@miricoricoli.com" className="text-blue-500 hover:underline">hey@miricoricoli.com</a>. (Up to 48-hour reply time)</p>
+                <p className="mb-4">Reach MIRICO RI COLIs inbox at <a href="mailto:hey@miricoricoli.com" className="text-blue-500 hover:underline">hey@miricoricoli.com</a>. (Up to 48-hour reply time)</p>
 
                 <h2 className="text-2xl font-semibold mb-2">Telephone</h2>
                 <p className="mb-4">Give us a ring on <a href="tel:+2543330509604" className="text-blue-500 hover:underline">+254 3330509604</a>. Our customer service team is available Monday – Friday from 9:00 – 17:30 EAT.</p>
